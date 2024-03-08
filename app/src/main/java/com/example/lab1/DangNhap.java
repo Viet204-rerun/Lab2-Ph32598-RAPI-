@@ -54,7 +54,7 @@ public class DangNhap extends AppCompatActivity {
                 if(task.isSuccessful()){
                     FirebaseUser user = mAuth.getCurrentUser();
                     Toast.makeText(DangNhap.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(DangNhap.this,DangXuat.class));
+                    startActivity(new Intent(DangNhap.this,DanhSach.class));
                 }else{
                     Log.w(TAG, "signInWithEmail:faiure",task.getException() );
                     Toast.makeText(DangNhap.this, "Đăng nhập thất bại", Toast.LENGTH_SHORT).show();

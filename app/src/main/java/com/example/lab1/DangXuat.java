@@ -18,6 +18,6 @@ public class DangXuat extends AppCompatActivity {
 
     public void Logout(View view) {
         FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(DangXuat.this,DangNhap.class));
+        startActivity(new Intent(DangXuat.this,MainActivity.class));
     }
 }

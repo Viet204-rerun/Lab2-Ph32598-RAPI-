@@ -1,6 +1,7 @@
 package com.example.lab1;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -147,4 +148,7 @@ public class DanhSach extends AppCompatActivity {
 
     }
 
+    public void DangXuat(View view) {
+        startActivity(new Intent(DanhSach.this, DangXuat.class));
+    }
 }
